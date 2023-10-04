@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.BusinessLogic", "Stests.BusinessLogic\Stests.BusinessLogic.csproj", "{FA3325DB-F597-4401-BBBE-E34BA1FED210}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D132832-4FEB-47AC-911D-EA9821EED784}
+	EndGlobalSection
+EndGlobal
