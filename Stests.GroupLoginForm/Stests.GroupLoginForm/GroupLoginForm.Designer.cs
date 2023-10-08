@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             loginButton = new Button();
             passwordBox = new TextBox();
             loginBox = new TextBox();
             passwordLabel = new Label();
             loginLabel = new Label();
+            errorProvider = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // loginButton
@@ -68,6 +71,8 @@
             loginBox.Name = "loginBox";
             loginBox.Size = new Size(310, 34);
             loginBox.TabIndex = 11;
+            loginBox.Validating += loginBox_Validating;
+            loginBox.Validated += loginBox_Validated;
             // 
             // passwordLabel
             // 
@@ -94,7 +99,11 @@
             loginLabel.Text = "Введите название группы";
             loginLabel.Click += loginLabel_Click;
             // 
-            // Form1
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
+            // 
+            // GroupLoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -106,8 +115,9 @@
             Controls.Add(loginLabel);
             MaximumSize = new Size(450, 350);
             MinimumSize = new Size(370, 350);
-            Name = "Form1";
+            Name = "GroupLoginForm";
             Text = "Log in group - stests";
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +129,6 @@
         private TextBox loginBox;
         private Label passwordLabel;
         private Label loginLabel;
+        private ErrorProvider errorProvider;
     }
 }

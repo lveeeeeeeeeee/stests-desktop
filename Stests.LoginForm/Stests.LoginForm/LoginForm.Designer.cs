@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             loginLabel = new Label();
             passwordLabel = new Label();
@@ -36,6 +37,8 @@
             loginBox = new TextBox();
             passwordBox = new TextBox();
             loginButton = new Button();
+            errorProvider = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // loginLabel
@@ -64,6 +67,8 @@
             // 
             resources.ApplyResources(loginBox, "loginBox");
             loginBox.Name = "loginBox";
+            loginBox.Validating += loginBox_Validating;
+            loginBox.Validated += loginBox_Validated;
             // 
             // passwordBox
             // 
@@ -78,6 +83,10 @@
             loginButton.UseVisualStyleBackColor = true;
             loginButton.Click += LoginButton_Click;
             // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
+            // 
             // LoginForm
             // 
             resources.ApplyResources(this, "$this");
@@ -91,6 +100,7 @@
             Controls.Add(loginLabel);
             Name = "LoginForm";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,5 +114,6 @@
         private TextBox loginBox;
         private TextBox passwordBox;
         private Button loginButton;
+        private ErrorProvider errorProvider;
     }
 }

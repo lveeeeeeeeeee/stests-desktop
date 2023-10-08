@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.LoginForm", "Stests.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.RegistrationForm", "Stests.RegistrationForm\Stests.RegistrationForm.csproj", "{044A1855-B4B7-4A6D-9D33-12CE5A59B76F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupLoginForm", "..\Stests.GroupLoginForm\Stests.GroupLoginForm\Stests.GroupLoginForm.csproj", "{8A631013-A784-44D2-B4F9-AD1B336C8E91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{044A1855-B4B7-4A6D-9D33-12CE5A59B76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044A1855-B4B7-4A6D-9D33-12CE5A59B76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044A1855-B4B7-4A6D-9D33-12CE5A59B76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A631013-A784-44D2-B4F9-AD1B336C8E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A631013-A784-44D2-B4F9-AD1B336C8E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A631013-A784-44D2-B4F9-AD1B336C8E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A631013-A784-44D2-B4F9-AD1B336C8E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

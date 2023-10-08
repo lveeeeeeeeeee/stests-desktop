@@ -28,40 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            loginButton = new Button();
-            loginBox = new TextBox();
+            components = new System.ComponentModel.Container();
+            registrationButton = new Button();
+            nameBox = new TextBox();
             linkPasswordLost = new LinkLabel();
             linkSignIn = new LinkLabel();
             loginLabel = new Label();
-            textBox1 = new TextBox();
+            surnameBox = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            patronymicBox = new TextBox();
             label2 = new Label();
             requiredLabel = new Label();
+            errorProvider = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
-            // loginButton
+            // registrationButton
             // 
-            loginButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            loginButton.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            loginButton.ImeMode = ImeMode.NoControl;
-            loginButton.Location = new Point(19, 350);
-            loginButton.MinimumSize = new Size(130, 54);
-            loginButton.Name = "loginButton";
-            loginButton.Size = new Size(310, 54);
-            loginButton.TabIndex = 13;
-            loginButton.Text = "Войти";
-            loginButton.UseVisualStyleBackColor = true;
+            registrationButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            registrationButton.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            registrationButton.ImeMode = ImeMode.NoControl;
+            registrationButton.Location = new Point(19, 350);
+            registrationButton.MinimumSize = new Size(130, 54);
+            registrationButton.Name = "registrationButton";
+            registrationButton.Size = new Size(310, 54);
+            registrationButton.TabIndex = 13;
+            registrationButton.Text = "Войти";
+            registrationButton.UseVisualStyleBackColor = true;
             // 
-            // loginBox
+            // nameBox
             // 
-            loginBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            loginBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            loginBox.Location = new Point(19, 75);
-            loginBox.MinimumSize = new Size(250, 34);
-            loginBox.Name = "loginBox";
-            loginBox.Size = new Size(310, 34);
-            loginBox.TabIndex = 11;
+            nameBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            nameBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            nameBox.Location = new Point(19, 75);
+            nameBox.MinimumSize = new Size(250, 34);
+            nameBox.Name = "nameBox";
+            nameBox.Size = new Size(310, 34);
+            nameBox.TabIndex = 11;
+            nameBox.Validating += nameBox_Validating;
+            nameBox.Validated += nameBox_Validated;
             // 
             // linkPasswordLost
             // 
@@ -101,15 +106,17 @@
             loginLabel.TabIndex = 7;
             loginLabel.Text = "*Введите своё имя";
             // 
-            // textBox1
+            // surnameBox
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(19, 185);
-            textBox1.MinimumSize = new Size(250, 34);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(310, 34);
-            textBox1.TabIndex = 15;
+            surnameBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            surnameBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            surnameBox.Location = new Point(19, 185);
+            surnameBox.MinimumSize = new Size(250, 34);
+            surnameBox.Name = "surnameBox";
+            surnameBox.Size = new Size(310, 34);
+            surnameBox.TabIndex = 15;
+            surnameBox.Validating += surnameBox_Validating;
+            surnameBox.Validated += surnameBox_Validated;
             // 
             // label1
             // 
@@ -123,15 +130,17 @@
             label1.TabIndex = 14;
             label1.Text = "*Введите свою фамилию";
             // 
-            // textBox2
+            // patronymicBox
             // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(19, 295);
-            textBox2.MinimumSize = new Size(250, 34);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(310, 34);
-            textBox2.TabIndex = 17;
+            patronymicBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            patronymicBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            patronymicBox.Location = new Point(19, 295);
+            patronymicBox.MinimumSize = new Size(250, 34);
+            patronymicBox.Name = "patronymicBox";
+            patronymicBox.Size = new Size(310, 34);
+            patronymicBox.TabIndex = 17;
+            patronymicBox.Validating += patronymicBox_Validating;
+            patronymicBox.Validated += patronymicBox_Validated;
             // 
             // label2
             // 
@@ -156,18 +165,22 @@
             requiredLabel.TabIndex = 18;
             requiredLabel.Text = "*поля обязательны для заполнения";
             // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
+            // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(362, 573);
             Controls.Add(requiredLabel);
-            Controls.Add(textBox2);
+            Controls.Add(patronymicBox);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(surnameBox);
             Controls.Add(label1);
-            Controls.Add(loginButton);
-            Controls.Add(loginBox);
+            Controls.Add(registrationButton);
+            Controls.Add(nameBox);
             Controls.Add(linkPasswordLost);
             Controls.Add(linkSignIn);
             Controls.Add(loginLabel);
@@ -175,21 +188,23 @@
             MinimumSize = new Size(380, 620);
             Name = "RegistrationForm";
             Text = "Registration - stests";
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button loginButton;
-        private TextBox loginBox;
+        private Button registrationButton;
+        private TextBox nameBox;
         private LinkLabel linkPasswordLost;
         private LinkLabel linkSignIn;
         private Label loginLabel;
-        private TextBox textBox1;
+        private TextBox surnameBox;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox patronymicBox;
         private Label label2;
         private Label requiredLabel;
+        private ErrorProvider errorProvider;
     }
 }
