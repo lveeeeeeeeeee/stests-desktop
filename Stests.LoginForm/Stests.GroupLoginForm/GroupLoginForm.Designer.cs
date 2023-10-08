@@ -1,6 +1,6 @@
 ﻿namespace Stests.LoginForm
 {
-    partial class LoginForm
+    partial class GroupLoginForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupLoginForm));
             loginLabel = new Label();
             passwordLabel = new Label();
             linkSignIn = new LinkLabel();
@@ -78,7 +78,7 @@
             loginButton.UseVisualStyleBackColor = true;
             loginButton.Click += LoginButton_Click;
             // 
-            // LoginForm
+            // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
@@ -89,7 +89,7 @@
             Controls.Add(linkSignIn);
             Controls.Add(passwordLabel);
             Controls.Add(loginLabel);
-            Name = "LoginForm";
+            Name = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

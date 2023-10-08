@@ -197,29 +197,23 @@
   <data name="linkSignIn.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;loginLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;passwordBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="linkPasswordLost.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 20</value>
   </data>
-  <data name="loginBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>320, 450</value>
   </data>
   <data name="linkPasswordLost.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;loginLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 26</value>
-  </data>
-  <data name="&gt;&gt;passwordBox.Name" xml:space="preserve">
-    <value>passwordBox</value>
   </data>
   <data name="linkPasswordLost.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 266</value>
@@ -227,8 +221,8 @@
   <data name="loginBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 27</value>
   </data>
-  <data name="&gt;&gt;linkPasswordLost.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;passwordBox.Name" xml:space="preserve">
+    <value>passwordBox</value>
   </data>
   <data name="&gt;&gt;linkPasswordLost.Name" xml:space="preserve">
     <value>linkPasswordLost</value>
@@ -238,6 +232,9 @@
   </data>
   <data name="linkSignIn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;linkPasswordLost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;loginButton.Name" xml:space="preserve">
     <value>loginButton</value>
@@ -259,6 +256,9 @@
   </data>
   <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="loginBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="linkSignIn.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 228</value>
@@ -284,8 +284,8 @@
   <data name="&gt;&gt;linkSignIn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>320, 450</value>
+  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;loginLabel.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -309,7 +309,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>LoginForm</value>
+    <value>Form1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

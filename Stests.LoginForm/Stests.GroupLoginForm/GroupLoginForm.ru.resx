@@ -122,7 +122,7 @@
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="loginLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 20</value>
+    <value>20, 30</value>
   </data>
   <data name="loginLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 35</value>
@@ -131,7 +131,7 @@
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 120</value>
+    <value>20, 130</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>259, 35</value>
@@ -168,7 +168,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="loginBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 65</value>
+    <value>20, 80</value>
   </data>
   <data name="loginBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>250, 34</value>
@@ -183,7 +183,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="passwordBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 165</value>
+    <value>20, 180</value>
   </data>
   <data name="passwordBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>250, 34</value>
@@ -198,7 +198,7 @@
     <value>Segoe UI, 15pt</value>
   </data>
   <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 220</value>
+    <value>20, 237</value>
   </data>
   <data name="loginButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>130, 54</value>
