@@ -9,6 +9,7 @@
 
         protected AppDbContext(IConfiguration configuration)
         {
+            Database.EnsureCreated();
             _configuration = configuration;
         }
 
@@ -16,14 +17,7 @@
         {
             base.OnModelCreating(modelBuilder);
 
-            // Add the Postgres Extension for UUID generation.
-            modelBuilder.HasPostgresExtension("uuid-ossp");
 
-            // Define configurations.
-            //modelBuilder.ApplyConfiguration(new UserGroupRelations());
-            //modelBuilder.ApplyConfiguration(new TypeConfiguration());
-            //modelBuilder.ApplyConfiguration(new ThreatConfiguration());
-            //modelBuilder.ApplyConfiguration(new ClassificationConfiguration());
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,24 +25,24 @@
             optionsBuilder.UseNpgsql(_configuration.GetConnectionString("PostgresConnectionString"));
         }
 
-        public DbSet<Users> users;
+        public DbSet<Users> Users => Set<Users>();
 
-        public DbSet<UserRoles> roles;
+        public DbSet<UserRoles> Roles => Set<UserRoles>();
 
-        public DbSet<UsersInfo> userInfo;
+        public DbSet<UsersInfo> UserInfo => Set<UsersInfo>();
 
-        public DbSet<TestSessions> testSessions;
+        public DbSet<TestSessions> TestSessions => Set<TestSessions>();
 
-        public DbSet<UserGroupRelations> userGroupRelation;
+        public DbSet<UserGroupRelations> UserGroupRelation => Set<UserGroupRelations>();
 
-        public DbSet<UserGroups> userGroups;
+        public DbSet<UserGroups> UserGroups => Set<UserGroups>();
 
-        public DbSet<Tests> tests;
+        public DbSet<Tests> Tests => Set<Tests>();
 
-        public DbSet<Grades> grades;
+        public DbSet<Grades> Grades => Set<Grades>();
 
-        public DbSet<UserAnswers> usersAnswers;
+        public DbSet<UserAnswers> UsersAnswers => Set<UserAnswers>();
 
-        public DbSet<CorrectAnswers> correctAnswers;
+        public DbSet<CorrectAnswers> CorrectAnswers => Set<CorrectAnswers>();
     }
 }

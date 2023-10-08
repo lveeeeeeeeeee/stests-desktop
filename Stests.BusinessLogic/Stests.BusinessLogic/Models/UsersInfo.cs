@@ -35,8 +35,7 @@
         /// <summary>
         /// User's patronymic.
         /// </summary>
-        [Required]
-        public required string Patronymic { get; set; }
+        public string? Patronymic { get; set; }
 
         /// <summary>
         /// User's login handle in the system.
