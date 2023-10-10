@@ -1,10 +1,10 @@
 using System.Text.RegularExpressions;
 
-namespace Stests.RegistrationForm
+namespace Stests.EditInfoForm
 {
-    public partial class RegistrationForm : Form
+    public partial class EditInfoForm : Form
     {
-        public RegistrationForm()
+        public EditInfoForm()
         {
             InitializeComponent();
         }
@@ -16,7 +16,7 @@ namespace Stests.RegistrationForm
         /// <returns>Validity of given input as boolean value (true if valid).</returns>
         private bool CredentialsCorrect(string line)
         {
-            Regex regex = new Regex("@[A-Za-zР-пр-џ]+$");
+            Regex regex = new Regex(@"[A-Za-zР-пр-џ]+$");
             return regex.IsMatch(line);
         }
 
