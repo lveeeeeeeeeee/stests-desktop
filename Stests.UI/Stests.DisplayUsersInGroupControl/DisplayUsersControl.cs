@@ -27,7 +27,7 @@
             {
                 var control = new UserInGroupControl.UserInGroupControl(plug.lineToDisplay);
                 userContainerPanel.Controls.Add(control);
-                control.Location = new Point(0, i++ * 120);
+                control.Location = new Point(0, i++ * control.Height);
             }
             if (objectsToDisplay.Length == 0)
             {
