@@ -9,9 +9,11 @@
         /// </summary>
         private void GetObjectsToDisplay()
         {
-            for (int i = 0; i < 0; i++)
+            int i = 0;
+            foreach (Plug plug in objectsToDisplay)
             {
                 objectsToDisplay[i] = new Plug($"пример как должно работать {i}");
+                i++;
             }
         }
 
