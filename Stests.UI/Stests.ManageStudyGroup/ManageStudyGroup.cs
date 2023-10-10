@@ -38,7 +38,7 @@ namespace Stests.ManageStudyGroup
         /// <returns>Whether group name is correct.</returns>
         private bool GroupNameCorrect(string line)
         {
-            Regex regex = new Regex(@"[А-Яа-яA-Za-z]+$");
+            Regex regex = new Regex(@"[А-Яа-яA-Za-z0-9]+$");
             return regex.IsMatch(line);
         }
 
@@ -51,7 +51,7 @@ namespace Stests.ManageStudyGroup
         {
             if (!GroupNameCorrect(nameBox.Text))
             {
-                string errorMsg = "Название группы может только содержать символы кириллицы или латиницы.";
+                string errorMsg = "Название группы может только содержать символы кириллицы, латиницы или цифры.";
 
                 // Cancel the event and select the text to be corrected by the user.
                 e.Cancel = true;

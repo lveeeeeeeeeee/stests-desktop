@@ -2,14 +2,14 @@
 {
     public partial class DisplayUsersControl : UserControl
     {
-        private static Plug[] objectsToDisplay { get; set; } = new Plug[10];
+        private static Plug[] objectsToDisplay { get; set; } = new Plug[0];
 
         /// <summary>
         /// Get objects to display in the control.
         /// </summary>
         private void GetObjectsToDisplay()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 0; i++)
             {
                 objectsToDisplay[i] = new Plug($"пример как должно работать {i}");
             }
@@ -22,11 +22,23 @@
         {
             InitializeComponent();
             GetObjectsToDisplay();
-            for (int i = 0; i < objectsToDisplay.Length; i++)
+            int i = 0;
+            foreach (Plug plug in objectsToDisplay)
             {
-                var control = new UserInGroupControl.UserInGroupControl(objectsToDisplay[i].lineToDisplay);
+                var control = new UserInGroupControl.UserInGroupControl(plug.lineToDisplay);
                 userContainerPanel.Controls.Add(control);
-                control.Location = new Point(0, i * 120);
+                control.Location = new Point(0, i++ * 120);
+            }
+            if (objectsToDisplay.Length == 0)
+            {
+                var control = new Label();
+                userContainerPanel.Controls.Add(control);
+                control.Text = "В данной группе ещё никто не состоит";
+                control.Font = new Font("Segoi UI", 30);
+                control.Location = new Point(0, 0);
+                control.Dock = DockStyle.Fill;
+                control.TextAlign = ContentAlignment.MiddleCenter;
+                control.BringToFront();
             }
         }
     }

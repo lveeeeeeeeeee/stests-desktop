@@ -106,7 +106,7 @@
             // 
             displayUsersControl1.AutoScroll = true;
             displayUsersControl1.BorderStyle = BorderStyle.FixedSingle;
-            displayUsersControl1.Location = new Point(16, 10);
+            displayUsersControl1.Location = new Point(16, 32);
             displayUsersControl1.MinimumSize = new Size(650, 300);
             displayUsersControl1.Name = "displayUsersControl1";
             displayUsersControl1.Size = new Size(650, 300);

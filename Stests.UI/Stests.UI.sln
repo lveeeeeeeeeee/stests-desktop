@@ -11,11 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.GroupLoginForm", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.RestorePasswordForm", "Stests.RestorePasswordForm\Stests.RestorePasswordForm.csproj", "{CDF88ACD-63F2-4AE6-9674-D2E03F115F62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.ManageStudyGroup", "Stests.ManageStudyGroup\Stests.ManageStudyGroup.csproj", "{56C44987-BCC1-40A8-A37F-EDEC3C05B80F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.ManageStudyGroup", "Stests.ManageStudyGroup\Stests.ManageStudyGroup.csproj", "{56C44987-BCC1-40A8-A37F-EDEC3C05B80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.DisplayUsersInGroupControl", "Stests.DisplayUsersInGroupControl\Stests.DisplayUsersInGroupControl.csproj", "{5A0E3D62-B5E6-42E5-B600-F16336BDF88C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.DisplayUsersInGroupControl", "Stests.DisplayUsersInGroupControl\Stests.DisplayUsersInGroupControl.csproj", "{5A0E3D62-B5E6-42E5-B600-F16336BDF88C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.UserInGroupControl", "Stests.UserInGroupControl\Stests.UserInGroupControl.csproj", "{8D07321C-C64D-441F-81D0-7AF3418BC013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.UserInGroupControl", "Stests.UserInGroupControl\Stests.UserInGroupControl.csproj", "{8D07321C-C64D-441F-81D0-7AF3418BC013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.DisplayTests", "Stests.DisplayTests\Stests.DisplayTests.csproj", "{8C34892A-4AEC-4964-A5A9-C27C92AE475D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.DisplayTestsControl", "Stests.DisplayTestsControl\Stests.DisplayTestsControl.csproj", "{256C497F-A43A-47DD-B30F-AF47C366E6F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInfoControl", "TestInfoControl\TestInfoControl.csproj", "{BEBDF748-5814-4D86-B715-41AC48027523}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{8D07321C-C64D-441F-81D0-7AF3418BC013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D07321C-C64D-441F-81D0-7AF3418BC013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D07321C-C64D-441F-81D0-7AF3418BC013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C34892A-4AEC-4964-A5A9-C27C92AE475D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C34892A-4AEC-4964-A5A9-C27C92AE475D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C34892A-4AEC-4964-A5A9-C27C92AE475D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C34892A-4AEC-4964-A5A9-C27C92AE475D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256C497F-A43A-47DD-B30F-AF47C366E6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256C497F-A43A-47DD-B30F-AF47C366E6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256C497F-A43A-47DD-B30F-AF47C366E6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256C497F-A43A-47DD-B30F-AF47C366E6F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBDF748-5814-4D86-B715-41AC48027523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBDF748-5814-4D86-B715-41AC48027523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBDF748-5814-4D86-B715-41AC48027523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBDF748-5814-4D86-B715-41AC48027523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
