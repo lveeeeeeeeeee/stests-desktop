@@ -2,7 +2,7 @@
 {
     public partial class DisplayUsersControl : UserControl
     {
-        private static Plug[] objectsToDisplay { get; set; } = new Plug[0];
+        private static Plug[] objectsToDisplay { get; set; } = new Plug[5];
 
         /// <summary>
         /// Get objects to display in the control.
