@@ -1,11 +1,9 @@
 ﻿namespace Stests.BusinessLogic.Models.JSON
 {
-    using Stests.BusinessLogic.Models;
-
     /// <summary>
     /// Class that represents JSON-object of singular question.
     /// </summary>
-    public class Question
+    public class Question : IEquatable<Question>
     {
         /// <summary>
         /// Content of the question (the question itself).
@@ -23,12 +21,27 @@
         public int QuestionId { get; set; }
 
         /// <summary>
-        /// Constructor of question object.
+        /// Collection of possible answers to the question.
         /// </summary>
-        public Question()
+        public AnswerVariants Variants { get; set; }
+
+        /// <inheritdoc/>
+        public bool Equals(Question? other)
         {
-            QuestionContent = "";
-            QuestionType = (int)QuestionTypes.SingularAnswer;
+            if (other == null)
+            {
+                return false;
+            }
+            return other.QuestionContent == QuestionContent
+                && other.QuestionId == QuestionId
+                && other.QuestionType == QuestionType;
+        }
+
+        /// <inheritdoc/>
+        public override bool Equals(object? obj)
+        {
+            var question = obj as Question;
+            return Equals(question);
         }
     }
 }
