@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             loginButton = new Button();
             passwordBox = new TextBox();
-            loginBox = new TextBox();
             passwordLabel = new Label();
             loginLabel = new Label();
-            errorProvider = new ErrorProvider(components);
-            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
+            groupLoginBox = new TextBox();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // loginButton
@@ -62,18 +62,6 @@
             passwordBox.TabIndex = 12;
             passwordBox.UseSystemPasswordChar = true;
             // 
-            // loginBox
-            // 
-            loginBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            loginBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            loginBox.Location = new Point(20, 65);
-            loginBox.MinimumSize = new Size(310, 34);
-            loginBox.Name = "loginBox";
-            loginBox.Size = new Size(310, 34);
-            loginBox.TabIndex = 11;
-            loginBox.Validating += loginBox_Validating;
-            loginBox.Validated += loginBox_Validated;
-            // 
             // passwordLabel
             // 
             passwordLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -99,25 +87,37 @@
             loginLabel.Text = "Введите название группы";
             loginLabel.Click += loginLabel_Click;
             // 
-            // errorProvider
+            // groupLoginBox
             // 
-            errorProvider.ContainerControl = this;
+            groupLoginBox.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupLoginBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            groupLoginBox.Location = new Point(20, 65);
+            groupLoginBox.MinimumSize = new Size(310, 34);
+            groupLoginBox.Name = "groupLoginBox";
+            groupLoginBox.Size = new Size(310, 34);
+            groupLoginBox.TabIndex = 14;
+            groupLoginBox.Validating += loginBox_Validating;
+            groupLoginBox.Validated += loginBox_Validated;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // GroupLoginForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(352, 303);
+            Controls.Add(groupLoginBox);
             Controls.Add(loginButton);
             Controls.Add(passwordBox);
-            Controls.Add(loginBox);
             Controls.Add(passwordLabel);
             Controls.Add(loginLabel);
             MaximumSize = new Size(450, 350);
             MinimumSize = new Size(370, 350);
             Name = "GroupLoginForm";
             Text = "Log in group - stests";
-            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -126,9 +126,9 @@
 
         private Button loginButton;
         private TextBox passwordBox;
-        private TextBox loginBox;
         private Label passwordLabel;
         private Label loginLabel;
-        private ErrorProvider errorProvider;
+        private TextBox groupLoginBox;
+        private ErrorProvider errorProvider1;
     }
 }
