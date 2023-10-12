@@ -38,7 +38,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("CorrectAnswersId");
 
-                    b.ToTable("CorrectAnswers");
+                    b.ToTable("CorrectAnswers", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.Grades", b =>
@@ -61,7 +61,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("GradeId");
 
-                    b.ToTable("Grades");
+                    b.ToTable("Grades", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.TestSessions", b =>
@@ -88,7 +88,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("TestSessionId");
 
-                    b.ToTable("TestSessions");
+                    b.ToTable("TestSessions", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.Tests", b =>
@@ -111,7 +111,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("TestId");
 
-                    b.ToTable("Tests");
+                    b.ToTable("Tests", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.UserAnswers", b =>
@@ -135,7 +135,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("UserAnswersId");
 
-                    b.ToTable("UsersAnswers");
+                    b.ToTable("UsersAnswers", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.UserGroupRelations", b =>
@@ -155,7 +155,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserGroupRelation");
+                    b.ToTable("UserGroupRelation", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.UserGroups", b =>
@@ -177,7 +177,7 @@ namespace Stests.Database.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("UserGroups");
+                    b.ToTable("UserGroups", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.UserRoles", b =>
@@ -192,7 +192,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("RoleId");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.Users", b =>
@@ -203,7 +203,7 @@ namespace Stests.Database.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("Stests.BusinessLogic.Models.UsersInfo", b =>
@@ -239,7 +239,7 @@ namespace Stests.Database.Migrations
                     b.HasIndex("Login")
                         .IsUnique();
 
-                    b.ToTable("UserInfo");
+                    b.ToTable("UserInfo", (string)null);
                 });
 #pragma warning restore 612, 618
         }
