@@ -3,8 +3,6 @@
     using Stests.Database;
     using Stests.BusinessLogic.Models;
     using PasswordGenerator;
-    using System.Security.Cryptography;
-    using System.Text;
     using Stests.LoginLogic;
 
     /// <summary>
@@ -35,12 +33,6 @@
             byte[] passwordByteArray = password.ToCharArray()
                 .Select(x => (byte)x)
                 .ToArray();
-            // Encode the password with SHA-256 algorythm.
-            using (SHA256 cypherSHA256 = SHA256.Create())
-            {
-                byte[] hashValue = cypherSHA256.ComputeHash(passwordByteArray);
-                password = Encoding.Default.GetString(hashValue);
-            }
 
             return password;
         }
@@ -91,6 +83,7 @@
                 userInfo.UserId = user.UserId;
 
                 context.UserInfo.Add(userInfo);
+                context.SaveChanges();
             }
             return userInfo;
         }

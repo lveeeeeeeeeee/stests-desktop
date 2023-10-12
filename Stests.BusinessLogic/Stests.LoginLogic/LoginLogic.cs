@@ -1,10 +1,8 @@
 ﻿namespace Stests.LoginLogic
 {
-    using Stests.BusinessLogic.Models;
+    using Stests.Database.Helpers;
     using Stests.Database;
     using System.Linq;
-    using System.Security.Cryptography;
-    using System.Text;
 
     public static class LoginLogic
     {
@@ -60,7 +58,7 @@
         /// <returns></returns>
         public static bool TryLogin(string login, string password)
         {
-            string passwordHash = LoginHelper.ConvertPasswordToHash(password);
+            string passwordHash = PasswordHelper.ConvertPasswordToHash(password);
 
             // Check if login and encoded password pair is present in the database.
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())

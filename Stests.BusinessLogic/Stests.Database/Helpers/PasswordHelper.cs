@@ -1,9 +1,9 @@
-﻿namespace Stests.LoginLogic
+﻿namespace Stests.Database.Helpers
 {
     using System.Security.Cryptography;
     using System.Text;
 
-    public static class LoginHelper
+    public static class PasswordHelper
     {
         public static string ConvertPasswordToHash(string password)
         {

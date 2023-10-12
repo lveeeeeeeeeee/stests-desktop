@@ -1,7 +1,7 @@
 ﻿namespace Stests.GroupLoginLogic
 {
     using Stests.Database;
-    using Stests.LoginLogic;
+    using Stests.Database.Helpers;
     using System.Linq;
 
     public class GroupLoginLogic
@@ -58,7 +58,7 @@
         /// <returns></returns>
         public static bool TryLogin(string login, string password)
         {
-            string passwordHash = LoginHelper.ConvertPasswordToHash(password);
+            string passwordHash = PasswordHelper.ConvertPasswordToHash(password);
 
             // Check if login and encoded password pair is present in the database.
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())

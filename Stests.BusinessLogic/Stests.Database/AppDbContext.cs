@@ -3,6 +3,7 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Stests.BusinessLogic.Models;
+    using Stests.Database.Helpers;
 
     public class AppDbContext : DbContext
     {
