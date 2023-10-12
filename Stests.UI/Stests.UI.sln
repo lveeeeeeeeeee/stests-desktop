@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.DisplayGradesControl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.GradeControl", "Stests.GradeControl\Stests.GradeControl.csproj", "{4C810A38-8056-487C-9686-9E7F35FFDF59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayAnswersControl", "DisplayAnswersControl\DisplayAnswersControl.csproj", "{68D8AA23-D426-4133-87D2-5CC6AF10D235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayAnswersControl", "DisplayAnswersControl\DisplayAnswersControl.csproj", "{68D8AA23-D426-4133-87D2-5CC6AF10D235}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.AnswerControl", "Stests.AnswerControl\Stests.AnswerControl.csproj", "{C825D81C-C15D-4294-BD3A-5A8FB98B1599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.AnswerControl", "Stests.AnswerControl\Stests.AnswerControl.csproj", "{C825D81C-C15D-4294-BD3A-5A8FB98B1599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.TestSolutionForm", "Stests.TestSolutionForm\Stests.TestSolutionForm.csproj", "{D0EB535A-7929-434E-A2B5-8718580270B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{C825D81C-C15D-4294-BD3A-5A8FB98B1599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C825D81C-C15D-4294-BD3A-5A8FB98B1599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C825D81C-C15D-4294-BD3A-5A8FB98B1599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EB535A-7929-434E-A2B5-8718580270B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EB535A-7929-434E-A2B5-8718580270B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EB535A-7929-434E-A2B5-8718580270B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EB535A-7929-434E-A2B5-8718580270B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
-﻿using Stests.BusinessLogic.Models.JSON;
-using Stests.AnswerControl;
+﻿using Stests.AnswerControl;
+using Stests.BusinessLogic.Models.JSON;
 
 namespace DisplayAnswersControl
 {
@@ -12,19 +12,31 @@ namespace DisplayAnswersControl
         /// </summary>
         private void GetObjectsToDisplay()
         {
-            int i = 0;
-            foreach (AnswerVariant plug in objectsToDisplay)
-            {
-                objectsToDisplay[i] = new AnswerPlug($"пример как должно работать {i + 1}");
-                i++;
-            }
+
         }
 
         public DisplayAnswersControl()
         {
             InitializeComponent();
             GetObjectsToDisplay();
-            Question q = new Question();
+            int i = 0;
+            foreach (AnswerVariant answer in objectsToDisplay)
+            {
+                var control = new AnswerControl();
+                displayAnswersPanel.Controls.Add(control);
+                control.Location = new Point(0, i++ * control.Height);
+            }
+            if (objectsToDisplay.Count() == 0)
+            {
+                var control = new Label();
+                displayAnswersPanel.Controls.Add(control);
+                control.Text = "Нет вариантов ответа 0_о как так";
+                control.Font = new Font("Segoi UI", 30);
+                control.Location = new Point(0, 0);
+                control.Dock = DockStyle.Fill;
+                control.TextAlign = ContentAlignment.MiddleCenter;
+                control.BringToFront();
+            }
         }
     }
 }

@@ -2,12 +2,37 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// Users' info table model.
     /// </summary>
     public class UsersInfo
     {
+        [SetsRequiredMembersAttribute]
+        /// <summary>
+        /// Default constructor of the object.
+        /// </summary>
+        public UsersInfo()
+        {
+            Name = "";
+            Surname = "";
+            Login = "";
+            PasswordHash = "";
+        }
+
+        [SetsRequiredMembersAttribute]
+        /// <summary>
+        /// Constructor of the UsersInfo object based on login and password info.
+        /// </summary>
+        /// <param name="login">Login string.</param>
+        /// <param name="password">Password hash string</param>
+        public UsersInfo(string login, string password)
+        {
+            Login = login;
+            PasswordHash = password;
+        }
+
         /// <summary>
         /// ID of the entry.
         /// </summary>

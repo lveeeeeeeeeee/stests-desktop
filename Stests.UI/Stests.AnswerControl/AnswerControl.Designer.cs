@@ -33,10 +33,11 @@
             // 
             // answerLabel
             // 
+            answerLabel.Dock = DockStyle.Fill;
             answerLabel.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            answerLabel.Location = new Point(0, 20);
+            answerLabel.Location = new Point(0, 0);
             answerLabel.Name = "answerLabel";
-            answerLabel.Size = new Size(700, 160);
+            answerLabel.Size = new Size(700, 200);
             answerLabel.TabIndex = 0;
             answerLabel.Text = "sample text";
             answerLabel.TextAlign = ContentAlignment.MiddleCenter;

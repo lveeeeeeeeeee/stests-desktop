@@ -8,11 +8,14 @@ namespace Stests.AnswerControl
 
         private event Action AnswerChangedEvent;
 
-        public AnswerVariant Answer { 
-            get {
+        public AnswerVariant Answer
+        {
+            get
+            {
                 return answer;
             }
-            set {
+            set
+            {
                 answer = value;
                 AnswerChangedEvent?.Invoke();
             }
