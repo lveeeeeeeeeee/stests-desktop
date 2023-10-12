@@ -8,12 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PasswordGenerator" Version="2.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Stests.Database\Stests.Database.csproj" />
-    <ProjectReference Include="..\Stests.LoginLogic\Stests.LoginLogic.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,6 +15,10 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<UsersInfo>(entity =>
+            {
+                entity.HasIndex(e => e.Login).IsUnique();
+            });
             base.OnModelCreating(modelBuilder);
         }
 
