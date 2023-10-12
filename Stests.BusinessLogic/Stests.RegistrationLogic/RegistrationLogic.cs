@@ -76,14 +76,15 @@
         /// <param name="name">User's name.</param>
         /// <param name="surname">User's surname.</param>
         /// <param name="patronymic">User's patronymic (optional).</param>
-        public static void Register(string name, string surname, string? patronymic)
+        /// <returns>Registered user's info.</returns>
+        public static UsersInfo Register(string name, string surname, string? patronymic = null)
         {
+            UsersInfo userInfo = GenerateLoginInfo();
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
                 Users user = new Users();
                 context.Users.Add(user);
 
-                UsersInfo userInfo = GenerateLoginInfo();
                 userInfo.Name = name;
                 userInfo.Surname = surname;
                 userInfo.Patronymic = patronymic;
@@ -91,6 +92,7 @@
 
                 context.UserInfo.Add(userInfo);
             }
+            return userInfo;
         }
     }
 

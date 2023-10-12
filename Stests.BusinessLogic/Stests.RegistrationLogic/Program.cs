@@ -2,9 +2,11 @@
 {
     internal class Program
     {
+        // it worked
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            object info = RegistrationLogic.Register("Алексей", "Гуревич");
+            Console.WriteLine(info.ToString());
         }
     }
 }

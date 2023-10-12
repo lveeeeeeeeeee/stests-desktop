@@ -45,7 +45,7 @@
                 .Select(x => x)
                 .Where(x => x.Login == login);
 
-            if (users == null)
+            if (!users.Any())
             {
                 return false;
             }
@@ -80,7 +80,7 @@
                     .Select(x => x)
                     .Where(x => x.Login == login && x.PasswordHash == passwordHash);
 
-                if (userInfo == null)
+                if (!userInfo.Any())
                 {
                     return false;
                 }
