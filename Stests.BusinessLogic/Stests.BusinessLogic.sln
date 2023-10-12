@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.BusinessLogic", "Stests.BusinessLogic\Stests.BusinessLogic.csproj", "{FA3325DB-F597-4401-BBBE-E34BA1FED210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stests.Database", "Stests.Database\Stests.Database.csproj", "{DB6EFB54-A26C-46AA-AF86-1EBE99C0558A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.RegistrationLogic", "Stests.RegistrationLogic\Stests.RegistrationLogic.csproj", "{A979905C-9974-4167-92E9-2BAAF3A29490}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA3325DB-F597-4401-BBBE-E34BA1FED210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6EFB54-A26C-46AA-AF86-1EBE99C0558A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6EFB54-A26C-46AA-AF86-1EBE99C0558A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6EFB54-A26C-46AA-AF86-1EBE99C0558A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6EFB54-A26C-46AA-AF86-1EBE99C0558A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A979905C-9974-4167-92E9-2BAAF3A29490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A979905C-9974-4167-92E9-2BAAF3A29490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A979905C-9974-4167-92E9-2BAAF3A29490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A979905C-9974-4167-92E9-2BAAF3A29490}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,28 +1,26 @@
-﻿namespace Stests.BusinessLogic.Data
+﻿namespace Stests.Database
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
+    using Stests.BusinessLogic.Models;
 
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        protected readonly IConfiguration _configuration;
+        protected IConfiguration _configuration;
 
-        protected AppDbContext(IConfiguration configuration)
+        public AppDbContext(IConfiguration configuration)
         {
-            Database.EnsureCreated();
             _configuration = configuration;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("PostgresConnectionString"));
+            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("Postgres"));
         }
 
         public DbSet<Users> Users => Set<Users>();
