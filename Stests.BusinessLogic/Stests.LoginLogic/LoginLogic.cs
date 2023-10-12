@@ -17,7 +17,7 @@
             {
                 // logins are unique
                 var users = context
-                    .UserInfo
+                    .user_info
                     .Select(x => x)
                     .Where(x => x.Login == login);
 
@@ -39,7 +39,7 @@
         {
             // logins are unique
             var users = dbContext
-                .UserInfo
+                .user_info
                 .Select(x => x)
                 .Where(x => x.Login == login);
 
@@ -64,7 +64,7 @@
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
                 var userInfo = context
-                    .UserInfo
+                    .user_info
                     .Select(x => x)
                     .Where(x => x.Login == login && x.PasswordHash == passwordHash);
 

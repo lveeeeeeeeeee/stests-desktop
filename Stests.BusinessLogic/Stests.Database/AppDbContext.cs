@@ -3,7 +3,6 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Stests.BusinessLogic.Models;
-    using Stests.Database.Helpers;
 
     public class AppDbContext : DbContext
     {
@@ -32,24 +31,24 @@
             optionsBuilder.UseNpgsql(_configuration.GetConnectionString("Postgres"));
         }
 
-        public DbSet<Users> Users => Set<Users>();
+        public DbSet<Users> users => Set<Users>();
 
-        public DbSet<UserRoles> Roles => Set<UserRoles>();
+        public DbSet<UserRoles> roles => Set<UserRoles>();
 
-        public DbSet<UsersInfo> UserInfo => Set<UsersInfo>();
+        public DbSet<UsersInfo> user_info => Set<UsersInfo>();
 
-        public DbSet<TestSessions> TestSessions => Set<TestSessions>();
+        public DbSet<TestSessions> test_sessions => Set<TestSessions>();
 
-        public DbSet<UserGroupRelations> UserGroupRelation => Set<UserGroupRelations>();
+        public DbSet<UserGroupRelations> user_group_relation => Set<UserGroupRelations>();
 
-        public DbSet<UserGroups> UserGroups => Set<UserGroups>();
+        public DbSet<UserGroups> user_groups => Set<UserGroups>();
 
-        public DbSet<Tests> Tests => Set<Tests>();
+        public DbSet<Tests> tests => Set<Tests>();
 
-        public DbSet<Grades> Grades => Set<Grades>();
+        public DbSet<Grades> grades => Set<Grades>();
 
-        public DbSet<UserAnswers> UsersAnswers => Set<UserAnswers>();
+        public DbSet<UserAnswers> users_answers => Set<UserAnswers>();
 
-        public DbSet<CorrectAnswers> CorrectAnswers => Set<CorrectAnswers>();
+        public DbSet<CorrectAnswers> correct_answers => Set<CorrectAnswers>();
     }
 }

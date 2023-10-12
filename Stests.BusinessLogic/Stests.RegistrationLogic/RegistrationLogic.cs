@@ -75,14 +75,14 @@
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
                 Users user = new Users();
-                context.Users.Add(user);
+                context.users.Add(user);
 
                 userInfo.Name = name;
                 userInfo.Surname = surname;
                 userInfo.Patronymic = patronymic;
                 userInfo.UserId = user.UserId;
 
-                context.UserInfo.Add(userInfo);
+                context.user_info.Add(userInfo);
                 context.SaveChanges();
             }
             return userInfo;
