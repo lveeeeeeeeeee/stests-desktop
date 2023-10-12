@@ -1,12 +1,10 @@
-﻿namespace Stests.LoginLogic
+﻿namespace Stests.GroupLoginLogic
 {
-    using Stests.BusinessLogic.Models;
     using Stests.Database;
+    using Stests.LoginLogic;
     using System.Linq;
-    using System.Security.Cryptography;
-    using System.Text;
 
-    public static class LoginLogic
+    public class GroupLoginLogic
     {
         /// <summary>
         /// Check if login exists in database.
@@ -18,12 +16,12 @@
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
                 // logins are unique
-                var users = context
-                    .UserInfo
+                var groups = context
+                    .UserGroups
                     .Select(x => x)
-                    .Where(x => x.Login == login);
+                    .Where(x => x.Name == login);
 
-                if (!users.Any())
+                if (!groups.Any())
                 {
                     return false;
                 }
@@ -40,12 +38,12 @@
         public static bool CheckLogin(string login, AppDbContext dbContext)
         {
             // logins are unique
-            var users = dbContext
-                .UserInfo
+            var groups = dbContext
+                .UserGroups
                 .Select(x => x)
-                .Where(x => x.Login == login);
+                .Where(x => x.Name == login);
 
-            if (!users.Any())
+            if (!groups.Any())
             {
                 return false;
             }
@@ -65,12 +63,12 @@
             // Check if login and encoded password pair is present in the database.
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
-                var userInfo = context
-                    .UserInfo
+                var groupInfo = context
+                    .UserGroups
                     .Select(x => x)
-                    .Where(x => x.Login == login && x.PasswordHash == passwordHash);
+                    .Where(x => x.Name == login && x.PasswordHash == passwordHash);
 
-                if (!userInfo.Any())
+                if (!groupInfo.Any())
                 {
                     return false;
                 }

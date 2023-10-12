@@ -9,5 +9,8 @@
 
         [Required]
         public required string Name { get; set; }
+
+        [Required]
+        public required string PasswordHash { get; set; }
     }
 }

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.RegistrationLogic", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.LoginLogic", "Stests.LoginLogic\Stests.LoginLogic.csproj", "{E1161EA2-1D72-4C59-8955-E487214E0C28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupLoginLogic", "Stests.GroupLoginLogic\Stests.GroupLoginLogic.csproj", "{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupCreationLogic", "Stests.GroupCreationLogic\Stests.GroupCreationLogic.csproj", "{8482B209-D0E9-4696-A559-D2B386087B58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{E1161EA2-1D72-4C59-8955-E487214E0C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1161EA2-1D72-4C59-8955-E487214E0C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1161EA2-1D72-4C59-8955-E487214E0C28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8482B209-D0E9-4696-A559-D2B386087B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8482B209-D0E9-4696-A559-D2B386087B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8482B209-D0E9-4696-A559-D2B386087B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8482B209-D0E9-4696-A559-D2B386087B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

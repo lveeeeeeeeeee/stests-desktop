@@ -19,6 +19,10 @@
             {
                 entity.HasIndex(e => e.Login).IsUnique();
             });
+            modelBuilder.Entity<UserGroups>(entity =>
+            {
+                entity.HasIndex(e => e.Name).IsUnique();
+            });
             base.OnModelCreating(modelBuilder);
         }
 
