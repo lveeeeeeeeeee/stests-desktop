@@ -12,19 +12,19 @@
         /// ID of the row.
         /// </summary>
         [Key]
-        public Guid CorrectAnswersId { get; set; }
+        public Guid сorrect_answers_id { get; set; }
 
         /// <summary>
         /// ID of specific test.
         /// </summary>
         [ForeignKey(nameof(Tests))]
-        public Guid TestId { get; set; }
+        public Guid test_id { get; set; }
 
         /// <summary>
         /// Correct answers for a specific test in JSON format.
         /// </summary>
         [Required]
         [Column(TypeName = "jsonb")]
-        public required string CorrectAnswersJson { get; set; }
+        public required string correct_answers_json { get; set; }
     }
 }

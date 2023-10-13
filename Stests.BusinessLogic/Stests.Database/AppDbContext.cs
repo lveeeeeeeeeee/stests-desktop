@@ -17,11 +17,11 @@
         {
             modelBuilder.Entity<UsersInfo>(entity =>
             {
-                entity.HasIndex(e => e.Login).IsUnique();
+                entity.HasIndex(e => e.login).IsUnique();
             });
             modelBuilder.Entity<UserGroups>(entity =>
             {
-                entity.HasIndex(e => e.Name).IsUnique();
+                entity.HasIndex(e => e.name).IsUnique();
             });
             base.OnModelCreating(modelBuilder);
         }

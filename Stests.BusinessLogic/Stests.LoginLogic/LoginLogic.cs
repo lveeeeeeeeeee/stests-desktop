@@ -19,7 +19,7 @@
                 var users = context
                     .user_info
                     .Select(x => x)
-                    .Where(x => x.Login == login);
+                    .Where(x => x.login == login);
 
                 if (!users.Any())
                 {
@@ -41,7 +41,7 @@
             var users = dbContext
                 .user_info
                 .Select(x => x)
-                .Where(x => x.Login == login);
+                .Where(x => x.login == login);
 
             if (!users.Any())
             {
@@ -58,15 +58,13 @@
         /// <returns></returns>
         public static bool TryLogin(string login, string password)
         {
-            string passwordHash = PasswordHelper.ConvertPasswordToHash(password);
-
             // Check if login and encoded password pair is present in the database.
             using (AppDbContext context = new DefaultDbContextFactory().CreateDbContext())
             {
                 var userInfo = context
                     .user_info
                     .Select(x => x)
-                    .Where(x => x.Login == login && x.PasswordHash == passwordHash);
+                    .Where(x => x.login == login && x.password_hash == password);
 
                 if (!userInfo.Any())
                 {

@@ -77,10 +77,10 @@
                 Users user = new Users();
                 context.users.Add(user);
 
-                userInfo.Name = name;
-                userInfo.Surname = surname;
-                userInfo.Patronymic = patronymic;
-                userInfo.UserId = user.UserId;
+                userInfo.name = name;
+                userInfo.surname = surname;
+                userInfo.patronymic = patronymic;
+                userInfo.user_id = user.user_id;
 
                 context.user_info.Add(userInfo);
                 context.SaveChanges();

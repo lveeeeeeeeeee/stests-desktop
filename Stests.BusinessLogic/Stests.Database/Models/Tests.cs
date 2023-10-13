@@ -13,25 +13,25 @@
         /// Id of the test in the database.
         /// </summary>
         [Key]
-        public Guid TestId { get; set; }
+        public Guid test_id { get; set; }
 
         /// <summary>
         /// Name of the test.
         /// </summary>
         [Required]
-        public required string TestName { get; set; }
+        public required string test_name { get; set; }
 
         /// <summary>
         /// Short description of the test.
         /// </summary>
         [Required]
-        public required string Description { get; set; }
+        public required string description { get; set; }
 
         /// <summary>
         /// Set of questions of the specific test in JSON format.
         /// </summary>
         [Required]
         [Column(TypeName = "jsonb")]
-        public required Questions TestQuestions { get; set; }
+        public required Questions test_questions { get; set; }
     }
 }

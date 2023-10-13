@@ -5,9 +5,9 @@
     public class UserRoles
     {
         [Key]
-        public Guid RoleId { get; set; }
+        public Guid role_id { get; set; }
 
         [Required]
-        public required string RoleName { get; set; }
+        public required string role_name { get; set; }
     }
 }

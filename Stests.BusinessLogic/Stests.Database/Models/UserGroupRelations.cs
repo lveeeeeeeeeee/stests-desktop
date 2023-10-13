@@ -12,24 +12,24 @@
         /// Primary key of the table.
         /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
         /// <summary>
         /// GroupId in which the user is registered.
         /// </summary>
         [ForeignKey(nameof(UserGroups))]
-        public Guid GroupId { get; set; }
+        public Guid group_id { get; set; }
 
         /// <summary>
         /// User's id.
         /// </summary>
         [ForeignKey(nameof(Users))]
-        public Guid UserId { get; set; }
+        public Guid user_id { get; set; }
 
         /// <summary>
         /// Id of the role of this user in the given group.
         /// </summary>
         [ForeignKey(nameof(UserRoles))]
-        public Guid RoleId { get; set; }
+        public Guid role_id { get; set; }
     }
 }

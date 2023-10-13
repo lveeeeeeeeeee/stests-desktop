@@ -11,6 +11,6 @@
         /// User's unique identifier.
         /// </summary>
         [Key]
-        public Guid UserId { get; set; }
+        public Guid user_id { get; set; }
     }
 }

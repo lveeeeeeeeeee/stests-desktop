@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.LoginLogic", "Stests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupLoginLogic", "Stests.GroupLoginLogic\Stests.GroupLoginLogic.csproj", "{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupCreationLogic", "Stests.GroupCreationLogic\Stests.GroupCreationLogic.csproj", "{8482B209-D0E9-4696-A559-D2B386087B58}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stests.GroupUpdateLogic", "Stests.GroupUpdateLogic\Stests.GroupUpdateLogic.csproj", "{4DB70C15-409B-494D-BE59-F2AA71EAE510}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{883EC3BF-0405-4DFB-9E61-820CE9F4BC6A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8482B209-D0E9-4696-A559-D2B386087B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8482B209-D0E9-4696-A559-D2B386087B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8482B209-D0E9-4696-A559-D2B386087B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8482B209-D0E9-4696-A559-D2B386087B58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DB70C15-409B-494D-BE59-F2AA71EAE510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4DB70C15-409B-494D-BE59-F2AA71EAE510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB70C15-409B-494D-BE59-F2AA71EAE510}.Release|Any CPU.ActiveCfg = Release|Any CPU

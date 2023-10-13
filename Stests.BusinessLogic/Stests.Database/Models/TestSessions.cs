@@ -12,37 +12,37 @@
         /// Id of test session row in the table.
         /// </summary>
         [Key]
-        public Guid TestSessionId { get; set; }
+        public Guid test_session_id { get; set; }
 
         /// <summary>
         /// Id of the solved test.
         /// </summary>
         [ForeignKey(nameof(Tests))]
-        public Guid TestId { get; set; }
+        public Guid test_id { get; set; }
 
         /// <summary>
         /// Id of student group for which test session was arranged.
         /// </summary>
         [ForeignKey(nameof(UserGroups))]
-        public Guid GroupId { get; set; }
+        public Guid group_id { get; set; }
 
         /// <summary>
         /// Name of the test session.
         /// </summary>
         [Required]
-        public string SessionName { get; set; }
+        public string session_name { get; set; }
 
         /// <summary>
         /// Date-time with timestamp of start of the test session.
         /// </summary>
         [Required]
-        public DateTime SessionStart { get; set; }
+        public DateTime session_start { get; set; }
 
 
         /// <summary>
         /// Date-time with timestamp of end of the test session.
         /// </summary>
         [Required]
-        public DateTime SessionEnd { get; set; }
+        public DateTime session_end { get; set; }
     }
 }

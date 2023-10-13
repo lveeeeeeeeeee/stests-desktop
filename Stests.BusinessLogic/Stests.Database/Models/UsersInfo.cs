@@ -15,10 +15,10 @@
         /// </summary>
         public UsersInfo()
         {
-            Name = "";
-            Surname = "";
-            Login = "";
-            PasswordHash = "";
+            name = "";
+            surname = "";
+            login = "";
+            password_hash = "";
         }
 
         [SetsRequiredMembersAttribute]
@@ -29,49 +29,49 @@
         /// <param name="password">Password hash string</param>
         public UsersInfo(string login, string password)
         {
-            Login = login;
-            PasswordHash = password;
+            this.login = login;
+            password_hash = password;
         }
 
         /// <summary>
         /// ID of the entry.
         /// </summary>
         [Key]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
         /// <summary>
         /// User's ID to which the info is related.
         /// </summary>
         [ForeignKey(nameof(Users))]
-        public Guid UserId { get; set; }
+        public Guid user_id { get; set; }
 
         /// <summary>
         /// User's name.
         /// </summary>
         [Required]
-        public required string Name { get; set; }
+        public required string name { get; set; }
 
         /// <summary>
         /// User's surname.
         /// </summary>
         [Required]
-        public required string Surname { get; set; }
+        public required string surname { get; set; }
 
         /// <summary>
         /// User's patronymic.
         /// </summary>
-        public string? Patronymic { get; set; }
+        public string? patronymic { get; set; }
 
         /// <summary>
         /// User's login handle in the system.
         /// </summary>
         [Required]
-        public required string Login { get; set; }
+        public required string login { get; set; }
 
         /// <summary>
         /// User's password hash code which we get from encrypting the password.
         /// </summary>
         [Required]
-        public required string PasswordHash { get; set; }
+        public required string password_hash { get; set; }
     }
 }

@@ -12,31 +12,32 @@
         /// <summary>
         /// Id of the row.
         /// </summary>
-        public Guid UserAnswersId { get; set; }
+        [Key]
+        public Guid user_answers_id { get; set; }
 
         /// <summary>
         /// Id of test which user has answered.
         /// </summary>
         [ForeignKey(nameof(Tests))]
-        public Guid TestId { get; set; }
+        public Guid test_id { get; set; }
 
         /// <summary>
         /// Id of user who gave answers to the test.
         /// </summary>
         [ForeignKey(nameof(Users))]
-        public Guid UserId { get; set; }
+        public Guid user_id { get; set; }
 
         /// <summary>
         /// Id of test session.
         /// </summary>
         [ForeignKey(nameof(TestSessions))]
-        public Guid TestSessionId { get; set; }
+        public Guid test_session_id { get; set; }
 
         /// <summary>
         /// User answers contained as JSON-object.
         /// </summary>
         [Required]
         [Column(TypeName = "jsonb")]
-        public Answers UserAnswer { get; set; }
+        public Answers user_answer { get; set; }
     }
 }

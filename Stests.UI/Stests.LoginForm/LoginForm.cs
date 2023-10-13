@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Stests.LoginLogic;
 
 namespace Stests.LoginForm
 {
